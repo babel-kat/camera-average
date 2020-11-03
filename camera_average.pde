@@ -30,7 +30,12 @@ void setup(){
     images[i] = loadImage(i + ".jpg");
   }
   //Initialize color arrays
-  red_sum = new_red = green_sum = new_green = blue_sum = new_blue = new float[total_pixels];
+  red_sum = new float[total_pixels];
+  new_red  = new float[total_pixels];
+  green_sum = new float[total_pixels];
+  new_green = new float[total_pixels];
+  blue_sum = new float[total_pixels];
+  new_blue = new float[total_pixels];
   for (int i = 0; i < total_pixels ; i++){
     red_sum[i] = green_sum[i] = blue_sum[i] = 0;
   } 
